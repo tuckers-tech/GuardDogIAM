@@ -4,7 +4,7 @@
 const jwt = require('jsonwebtoken');
 
 function ValidJWTRefreshToken(req, res, next) {
-  console.log(req.body.refreshToken);
+  // console.log(req.body.refreshToken);
   jwt.verify(
     req.body.refreshToken,
     process.env.JWT_REFRESH_SECRET,

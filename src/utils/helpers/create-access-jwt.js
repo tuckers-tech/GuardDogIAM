@@ -27,7 +27,7 @@ function createAccessJWT(user) {
       }
     },
     process.env.JWT_ACCESS_SECRET,
-    { expiresIn: '1s', jwtid: uuid() }
+    { expiresIn: '15m', jwtid: uuid() }
   );
 }
 

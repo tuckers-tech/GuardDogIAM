@@ -41,7 +41,6 @@ router.post('/', (req, res) => {
   const terms = req.body.terms === 'true' ? true : false;
 
   if (!terms) {
-    console.log('here');
     res.json({ status: 409, message: 'Terms Must Be Accepted' });
   } else {
     Promise.join(
